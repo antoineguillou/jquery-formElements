@@ -22,7 +22,11 @@
             var activeVal = $dropdown.find('option:selected').text();
             var options = '';
             $dropdown.find('option').each(function(i,e){
-                options += '<li>'+$(e).text()+'</li>';
+                if($(e).text() == activeVal){
+                  options += '<li class="selected">'+$(e).text()+'</li>';
+                } else {
+                  options += '<li>'+$(e).text()+'</li>';
+                }
             });
 
             var newDropdown = $('<div class="form-element-dropdown">'+
@@ -59,6 +63,12 @@
             var index = $(this).index(),
                 val = $(this).text(),
                 wrap = $(this).closest('.form-element-dropdown');
+
+            wrap.children('ul')
+                .find('li')
+                .removeClass('selected')
+                .eq(index)
+                .addClass('selected');
 
             wrap.siblings('select')
                 .find('option')

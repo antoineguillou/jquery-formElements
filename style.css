@@ -266,6 +266,8 @@ body {
         padding: 0 15px; }
         .form-element .form-element-dropdown ul li:hover {
           background-color: #f6f6f6; }
+        .form-element .form-element-dropdown ul li.selected {
+          display: none; }
   .form-element input[type="file"].input-file-hidden {
     width: 0.1px;
     height: 0.1px;
