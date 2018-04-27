@@ -95,7 +95,7 @@ body {
       color: red; }
     .form-element input[type="radio"].error ::-webkit-input-placeholder {
       color: red; }
-  .form-element input[type="radio"] + label span.radio-btn {
+  .form-element input[type="radio"] ~ span.radio-btn {
     background-color: #eee;
     border: 1px solid #ccc;
     vertical-align: middle;
@@ -107,7 +107,7 @@ body {
     -moz-border-radius: 20px;
     height: 20px;
     width: 20px; }
-    .form-element input[type="radio"] + label span.radio-btn:before {
+    .form-element input[type="radio"] ~ span.radio-btn:before {
       background: #666;
       content: "";
       position: absolute;
@@ -138,10 +138,10 @@ body {
       -moz-transition: all 0.1s ease;
       -ms-transition: all 0.1s ease;
       -o-transition: all 0.1s ease; }
-  .form-element input[type="radio"] + label span.text {
+  .form-element input[type="radio"] ~ span.text {
     margin: 0 10px 0 0;
     vertical-align: middle; }
-  .form-element input[type="radio"]:checked + label span.radio-btn:before {
+  .form-element input[type="radio"]:checked ~ span.radio-btn:before {
     transform: translate(-50%, -50%) scale(1);
     -webkit-transform: translate(-50%, -50%) scale(1);
     -moz-transform: translate(-50%, -50%) scale(1);
@@ -149,9 +149,9 @@ body {
     -o-transform: translate(-50%, -50%) scale(1); }
   .form-element input[type="radio"].custom-radio {
     display: none; }
-  .form-element input[type="radio"].custom-radio + label span.text {
+  .form-element input[type="radio"].custom-radio ~ span.text {
     vertical-align: middle; }
-  .form-element input[type="radio"].custom-radio + label span.radio-btn {
+  .form-element input[type="radio"].custom-radio ~ span.radio-btn {
     vertical-align: middle;
     display: inline-block;
     margin: 0 14px 0 0; }
@@ -165,9 +165,9 @@ body {
     .form-element input[type="checkbox"].custom-checkbox:focus + label span.checkbox-btn {
       background-color: #f6f6f6;
       border-color: #bfbfbf; }
-  .form-element input[type="checkbox"].custom-checkbox + label span.text {
+  .form-element input[type="checkbox"].custom-checkbox ~ span.text {
     vertical-align: middle; }
-  .form-element input[type="checkbox"].custom-checkbox + label span.checkbox-btn {
+  .form-element input[type="checkbox"].custom-checkbox ~ span.checkbox-btn {
     border-radius: 2px;
     background-color: #eee;
     border: 1px solid #ccc;
@@ -177,7 +177,7 @@ body {
     position: relative;
     height: 20px;
     width: 20px; }
-    .form-element input[type="checkbox"].custom-checkbox + label span.checkbox-btn svg {
+    .form-element input[type="checkbox"].custom-checkbox ~ span.checkbox-btn svg {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -188,7 +188,7 @@ body {
       -o-transform: translate(-50%, -50%);
       height: 16px;
       width: 16px; }
-      .form-element input[type="checkbox"].custom-checkbox + label span.checkbox-btn svg path {
+      .form-element input[type="checkbox"].custom-checkbox ~ span.checkbox-btn svg path {
         fill: #666;
         transform-origin: 50% 50%;
         -webkit-transform-origin: 50% 50%;
@@ -205,7 +205,7 @@ body {
         -moz-transition: all 0.1s ease;
         -ms-transition: all 0.1s ease;
         -o-transition: all 0.1s ease; }
-  .form-element input[type="checkbox"].custom-checkbox:checked + label span.checkbox-btn svg path {
+  .form-element input[type="checkbox"].custom-checkbox:checked ~ span.checkbox-btn svg path {
     transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);

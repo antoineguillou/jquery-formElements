@@ -297,7 +297,7 @@ body{
             @include placeholder(red);
         }
     }
-    input[type="radio"] + label span.radio-btn {
+    input[type="radio"] ~ span.radio-btn {
         background-color: $fe_background;
         border: 1px solid $fe_border;
         vertical-align: middle;
@@ -317,18 +317,18 @@ body{
             @include transition(all .1s ease);
         }
     }
-    input[type="radio"] + label span.text {
+    input[type="radio"] ~ span.text {
         margin: 0 10px 0 0;
         vertical-align: middle;
     }
-    input[type="radio"]:checked + label span.radio-btn {
+    input[type="radio"]:checked ~ span.radio-btn {
         //@include sprite(7, 6, 16px, 16px);
 
         &:before{
             @include transform(translate(-50%, -50%) scale(1));
         }
     }
-    input[type="radio"]:checked + label span.text {
+    input[type="radio"]:checked ~ span.text {
     }
 
     //========================================================
@@ -338,18 +338,18 @@ body{
     input[type="radio"].custom-radio {
         display:none;
     }
-    input[type="radio"].custom-radio + label span.text {
+    input[type="radio"].custom-radio ~ span.text {
         vertical-align: middle;
     }
-    input[type="radio"].custom-radio + label span.radio-btn {
+    input[type="radio"].custom-radio ~ span.radio-btn {
         vertical-align: middle;
         display:inline-block;
         margin: 0 14px 0 0;
         //@include retina-sprite($sprite-input-radio-group);
     }
-    input[type="radio"].custom-radio:checked + label span.text {
+    input[type="radio"].custom-radio:checked ~ span.text {
     }
-    input[type="radio"].custom-radio:checked + label span.radio-btn {
+    input[type="radio"].custom-radio:checked ~ span.radio-btn {
         //@include retina-sprite($sprite-input-radio-group);
     }
 
@@ -371,10 +371,10 @@ body{
             border-color: darken($fe_border, 5%);
         }
     }
-    input[type="checkbox"].custom-checkbox + label span.text {
+    input[type="checkbox"].custom-checkbox ~ span.text {
         vertical-align: middle;
     }
-    input[type="checkbox"].custom-checkbox + label span.checkbox-btn {
+    input[type="checkbox"].custom-checkbox ~ span.checkbox-btn {
         border-radius: 2px;
         background-color: $fe_background;
         border: 1px solid $fe_border;
@@ -396,9 +396,9 @@ body{
             }
         }
     }
-    input[type="checkbox"].custom-checkbox:checked + label span.text {
+    input[type="checkbox"].custom-checkbox:checked ~ span.text {
     }
-    input[type="checkbox"].custom-checkbox:checked + label span.checkbox-btn {
+    input[type="checkbox"].custom-checkbox:checked ~ span.checkbox-btn {
         svg path{
             @include transform(scale(1));
         }
