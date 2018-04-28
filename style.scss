@@ -241,11 +241,11 @@ body{
         border: 1px solid $fe_border;
         padding: 0 12px 0;
         background-color: $fe_background;
+        appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
         -ms-appearance: none;
         -o-appearance: none;
-        appearance: none;
     }
     select {
         @include size(100%, $fe_lineheight);
@@ -256,11 +256,11 @@ body{
         padding-right: 20px;
         margin: 0 0 0;
         background-color: $fe_background;
+        appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
         -ms-appearance: none;
         -o-appearance: none;
-        appearance: none;
     }
     textarea{
         border: 1px solid $fe_border;
@@ -271,11 +271,11 @@ body{
         padding: 6px 12px;
         resize: vertical;
         background-color: $fe_background;
+        appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
         -ms-appearance: none;
         -o-appearance: none;
-        appearance: none;
     }
     input, textarea, select{
         @include transition(background-color .1s ease, border-color .1s ease);
@@ -498,11 +498,11 @@ body{
         padding: 0 12px 0 $fe_lineheight;
         position: relative;
         background-color: $fe_background;
+        appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
         -ms-appearance: none;
         -o-appearance: none;
-        appearance: none;
         @include font-open(400, 14px, $fe_lineheight);
 
         &:before{
